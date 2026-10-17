@@ -6,14 +6,12 @@ ake
 am
 amu
 ar
-ast
 az
 ba
 be
 bem
 ber
 bg
-bho
 bi
 bn
 br
@@ -39,7 +37,6 @@ de
 dik
 dje
 djk
-doi
 dop
 dv
 dz
@@ -67,14 +64,12 @@ ha
 haw
 he
 hi
-hne
 hr
 ht
 hu
 hy
 id
 ig
-ilo
 is
 it
 ja
@@ -91,7 +86,6 @@ kk
 km
 kn
 ko
-kri
 ku
 ky
 la
@@ -101,7 +95,6 @@ ln
 lo
 lt
 lv
-mai
 mam
 me
 mg
@@ -121,7 +114,6 @@ nhg
 nl
 no
 ny
-oc
 ojb
 om
 or
@@ -142,7 +134,6 @@ rn
 ro
 ru
 rw
-sa
 sd
 sg
 shi
@@ -183,7 +174,6 @@ usp
 uy
 uz
 ve
-vec
 vi
 wal
 war
@@ -194,5 +184,4 @@ yo
 yua
 yue
 zh
-zh-Hant
 zu
