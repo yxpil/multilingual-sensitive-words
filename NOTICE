@@ -1,0 +1,15 @@
+multilingual-sensitive-words
+Copyright (c) 2026 yxpil
+
+This product includes content derived from the following open-source project:
+
+  fwwdn/sensitive-stop-words
+  https://github.com/fwwdn/sensitive-stop-words
+  Copyright 2017-present fwwdn
+  Licensed under the Apache License, Version 2.0
+  (http://www.apache.org/licenses/LICENSE-2.0)
+
+The Chinese source word lists under data/sensitive-words/ and the multilingual
+translations under data/i18n/ are derived from the above project's word lists.
+Per the Apache License 2.0, the original copyright and license notices are
+retained. See the LICENSE file for the full license text.

@@ -1,6 +1,6 @@
 # Multilingual Sensitive-Words List（多语言敏感词库）
 
-内容审核用的**多语言敏感词库**，覆盖 108 种语言，专为「AI 审核不可用时的关键词降级/过滤」设计。
+内容审核用的**多语言敏感词库**，覆盖 **187 种语言**，专为「AI 审核不可用时的关键词降级/过滤」设计。
 
 > 原词库来自 [BUI](https://yxpil.com) 博客项目的 `moderate.ts` 审核降级逻辑：AI 判 `pending`（不可用/判不出）时，命中词库 → `rejected`（拦截），否则 → `approved`（放行）。
 
@@ -28,19 +28,20 @@
 data/
   sensitive-words/          # 中文原版（逗号/行分隔）
   i18n/
-    <lang>/                 # 每种语言一套翻译
-      sw_色情类.json
-      sw_政治类.json
-      sw_广告.json
-      sw_涉枪涉爆违法信息关键词.json
-      sw_网址.json
-languages.txt               # 覆盖语言代码清单
+    <lang>/                 # 每种语言一套翻译（ISO 639 代码，如 en/ja/ru/cht…）
+      porn.json             # 色情/低俗词
+      political.json        # 政治敏感词
+      ads.json              # 广告/营销词
+      weapons.json          # 涉枪/涉爆/违法词
+      urls.json             # 网址/推广链接特征
+languages.txt               # 覆盖语言代码清单（187 种）
 ```
 
 ## 翻译方式
 
-- 用**专用机翻引擎**（`translators` 库 / Bing 机翻接口），**非通用大模型**。
+- 用**专用机翻引擎**（`translators` 库：Iciba 机翻接口为主，Bing/有道兜底），**非通用大模型**。
 - 翻译质量为机器水平，用于**过滤/初审**，可能含误译、漏译，建议上线前人工抽检。
+- 网址/域名/拼音等非中文词条在全部语言中原样透传（不翻译）。
 
 ## 使用
 
@@ -60,4 +61,10 @@ languages.txt               # 覆盖语言代码清单
 
 ## 许可
 
-MIT License
+本仓库包含 **Apache License 2.0** 许可的开源素材：原始中文词库来自 [fwwdn/sensitive-stop-words](https://github.com/fwwdn/sensitive-stop-words)（Copyright 2017-present fwwdn）。本仓库作为其衍生，整体以 **Apache License 2.0** 发布。
+
+- 完整许可证文本见 `LICENSE`
+- 来源归属与版权声明见 `NOTICE`
+- 原始词库来源见上文「原始词库来源」
+
+按 Apache 2.0 协议要求，已保留原始版权声明、附带许可证副本（`LICENSE`）并标注来源（`NOTICE` / README）。
